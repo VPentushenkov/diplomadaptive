@@ -73,10 +73,7 @@ body {
 
     }
 
-    .main {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+ 
 
     .new {
         margin-right: 10px;
@@ -99,13 +96,14 @@ body {
         flex-direction: column;
 
         width: 412px;
+        
 
     }
 
     .trends-card-item {
         margin-left: 0px;
         width: 100vw;
-
+        margin-bottom: 10px;
     }
 
 
@@ -120,7 +118,7 @@ body {
     .main{
         flex-wrap: wrap;
         width: 100vw;
-        
+        left: 0;
     }
 .content {
     width: 100vw;
@@ -128,11 +126,20 @@ body {
     
     
 }
+
+
 .content-card {
     flex-wrap: wrap;
+  padding-bottom: 40px; 
+  margin-left: 10px; 
+  margin-right: 10px;
+  
     
 }
 
+.content-card-img{
+    width: 100vw;
+}
 .content-card-picture {
     width: 100%;
 }
@@ -141,11 +148,32 @@ body {
     flex-direction: column;
 }
 
+.header-menu {
+    display: none;
+}
+.new {
+    left: 0;
+   
+}
+.new-card {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
 }
 
 @media (min-width:1200px) {
     .trends-card-item:nth-child(n+2) {
         margin-left: 5px;
+    }
+    .main {
+        display: flex;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        position: relative;
+    
     }
 
     .content {
@@ -163,6 +191,7 @@ body {
         margin-left: 10vw;
     position: relative;
     max-width: 270px;
+    right: 0;
     }
     .our {
         margin-left: 10vw;
@@ -416,17 +445,11 @@ body {
     font-size: 14px;
 }
 
-.main {
-    display: flex;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    position: relative;
 
-}
 
 .new {
     display: flex;
-    right: 0;
+    
     flex-direction: column;
     
     margin-top: 60px;
