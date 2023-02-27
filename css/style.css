@@ -40,6 +40,13 @@ body {
     src: url("../fonts/OpenSans-Regular.woff2");
     font-weight: 400;
 }
+.footer-social-item:nth-child(n+1) {
+    margin-right: 20px;
+}
+
+.footer-social-item:nth-last-child(1) {
+    margin-right: 0px;
+}
 
 
 @media (max-width: 640px) {
@@ -164,6 +171,24 @@ body {
 
     .our-card {
         width: 33vw;
+    }
+
+  
+    
+
+
+
+
+    .footer {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .footer-social-item:nth-child(n+1) {
+        margin-right: 70px;
+    }
+    
+    .footer-social-item:nth-last-child(1) {
+        margin-right: 0px;
     }
 }
 
@@ -497,10 +522,7 @@ body {
 
 
 
-.footer {
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
+
 
 .footer-social {
     display: flex;
@@ -511,13 +533,7 @@ body {
     align-items: center;
 }
 
-.footer-social-item:nth-child(n+1) {
-    margin-right: 70px;
-}
 
-.footer-social-item:nth-last-child(1) {
-    margin-right: 0px;
-}
 
 
 
@@ -607,6 +623,8 @@ body {
 
 }
 
+
+
 .form-seach-button:hover {
     cursor: pointer;
 }
@@ -639,6 +657,8 @@ body {
     display: flex;
     width: 100%;
     justify-content: stretch;
+
+    display: flex;
     flex-direction: column;
 
 }
